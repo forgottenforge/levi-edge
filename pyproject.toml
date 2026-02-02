@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "levi-edge"
+version = "0.1.0"
+description = "Drop-in small-matrix acceleration for PyTorch on edge devices"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE", "license_AGPL.txt", "license_COMMERCIAL.txt"]
+requires-python = ">=3.8"
+authors = [
+    {name = "Matthias C. Wurm", email = "nfo@forgottenforge.xyz"},
+]
+keywords = [
+    "pytorch", "cuda", "edge-computing", "gpu-optimization",
+    "matrix-multiplication", "inference", "jetson", "embedded-ai",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Hardware",
+]
+dependencies = [
+    "torch>=2.1",
+]
+
+[project.optional-dependencies]
+benchmark = ["torchvision>=0.14"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/forgottenforge/levi-edge"
+Documentation = "https://github.com/forgottenforge/levi-edge#readme"
+Repository = "https://github.com/forgottenforge/levi-edge"
+Issues = "https://github.com/forgottenforge/levi-edge/issues"
+
+[tool.setuptools.packages.find]
+include = ["levi_edge*"]

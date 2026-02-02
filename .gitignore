@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LEVI specific
+marketing/
+sigma_c_analysis.py
+_test_cpp.py
+run_test.bat
+_run_test.bat
+
+# Torch extension cache
+torch_extensions/

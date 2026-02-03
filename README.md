@@ -133,8 +133,6 @@ See [`examples/`](examples/):
 
 The kernel selection thresholds were determined using susceptibility analysis (sigma_c) — measuring execution time stability across matrix sizes to find the critical scale where cuBLAS dispatch overhead transitions from dominant to negligible. See [sigmacore](https://github.com/forgottenforge/sigmacore) for the general framework.
 
-Based on: M.C. Wurm, *"Batch-Size Susceptibility across Five Computational Domains"* (2024/2025).
-
 ## License
 
 **Dual-licensed** under:
